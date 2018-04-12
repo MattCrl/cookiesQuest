@@ -1,3 +1,5 @@
+<?php session_start() ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +48,15 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
-  <div class="container-fluid text-right">
-    <strong>Hello Wilder !</strong>
+  <div class="container text-right">
+    <?php
+    if (isset($_SESSION['username'])) {
+        ?>
+        <strong>Hello <?= $_SESSION['username'] ?> </strong>
+        <?php
+    } else {
+        header('Location: login.php');
+    }
+    ?>
   </div>
 </header>
