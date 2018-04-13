@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 if(isset($_POST['loginname'])) {
 
     $_SESSION['username'] = $_POST['loginname'];
@@ -20,7 +21,7 @@ if(isset($_POST['loginname'])) {
         <strong> Sign in to continue</strong>
       </div>
       <div class="panel-body">
-        <form role="form" action="#" method="POST">
+        <form role="form" action="testlogin.php" method="POST">
           <fieldset>
             <div class="row">
               <div class="center-block">

@@ -1,5 +1,3 @@
-<?php session_start() ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,19 +42,18 @@
               Cart
             </a>
           </li>
+            <?php if (!isset($_SESSION['username'])) { ?>
+                <li><a href="/login.php"  class="btn btn-primary navbar-btn">Login</a>
+            <?php } else { ?>
+                <li><a href="/logout.php"  class="btn btn-danger navbar-btn">Logout</a>
+            <?php }  ?>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
   <div class="container text-right">
-    <?php
-    if (isset($_SESSION['username'])) {
-        ?>
-        <strong>Hello <?= $_SESSION['username'] ?> </strong>
-        <?php
-    } else {
-        header('Location: login.php');
-    }
-    ?>
+
+      <strong>Hello <?= $_SESSION['username'] ?? 'Wilder' ?> </strong>
+
   </div>
 </header>
