@@ -1,11 +1,13 @@
 <?php require 'inc/session.php'; ?>
-<?php require 'inc/head.php';
-?>
+<?php require 'inc/head.php'; ?>
 
 
 
 
 <section class="cookies container">
+<?php if (isset($_GET['nop'])) {
+    echo '<span class="red">' . '(」゜ロ゜)」 You\'re already identified ! (」゜ロ゜)」' . '</span>';
+} ?>
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
       <figure class="thumbnail text-center">

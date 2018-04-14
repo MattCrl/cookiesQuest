@@ -7,6 +7,12 @@ if(isset($_POST['loginname'])) {
     header('Location: index.php');
 }
 
+if (isset($_SESSION['username'])) {
+    header('Location: index.php?nop=1');
+}
+
+
+
 ?>
 
 
@@ -16,7 +22,7 @@ if(isset($_POST['loginname'])) {
 <div class="container" style="margin-top:40px">
 <?php
     if (isset($_GET['log'])) {
-    echo '<span class ="red">' . 'You must login before adding something to your cart !' . '</span>';
+    echo '<span class ="red">' . 'You must login before adding an item or seeing your cart !' . '</span>';
     }
 ?>
 <div class="row">

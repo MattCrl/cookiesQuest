@@ -107,3 +107,13 @@ section.cookies{
     color: red;
     font-weight: bold;
 }
+
+.added {
+    background-color: #e7ffdd;
+    border: 1px solid black;
+}
+
+.remove {
+    color: red;
+    font-style: italic;
+}
