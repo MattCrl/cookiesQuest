@@ -14,6 +14,11 @@ if(isset($_POST['loginname'])) {
 <?php require 'inc/head.php'; ?>
 
 <div class="container" style="margin-top:40px">
+<?php
+    if (isset($_GET['log'])) {
+    echo '<span class ="red">' . 'You must login before adding something to your cart !' . '</span>';
+    }
+?>
 <div class="row">
   <div class="col-sm-6 col-md-4 col-md-offset-4">
     <div class="panel panel-default">

@@ -51,9 +51,9 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
-  <div class="container text-right">
+  <div class="container text-left">
 
-      <strong>Hello <?= $_SESSION['username'] ?? 'Wilder' ?> </strong>
+      <strong><span class="welcome">⊂(◉‿◉)つ Hello <?= $_SESSION['username'] ?? 'Wilder' ?> ! ⊂(◉‿◉)つ</span></strong>
 
   </div>
 </header>

@@ -2,8 +2,7 @@ body {
     padding-top:70px;
 }
 
-h1, h2, h3, h4,
-strong {
+h1, h2, h3, h4 {
   font-family: 'Kaushan Script', cursive;
 }
 
@@ -87,4 +86,24 @@ section.cookies{
 
 .navbar {
     background-color: black;
+}
+
+.welcome {
+    font-size: 30px;
+}
+
+
+.thumbnail {
+    height: 350px;
+}
+
+.thumbnail img {
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
 }
