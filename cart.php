@@ -7,6 +7,8 @@
           header('Location: login.php?log=1');
       }
 
+      var_dump($_COOKIE['cookieadded']);
+
       if (isset($_COOKIE['cookieadded'])) {
         if (isset($_COOKIE['cookieadded'][46])) {
             if ($_COOKIE['cookieadded'][46] > 0) { ?>
@@ -17,10 +19,10 @@
                         <figcaption class="caption">
                             <h3>Pink cookies</h3>
                             <p><strong>Total cookies added : </strong><?= $_COOKIE['cookieadded'][46] ?></p>
-                            <a  href="add.php?add_to_cart=46" class="btn btn-danger">
+                            <a  href="delete.php?remove=46" class="btn btn-danger">
                                 <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
                             </a>
-                            <span class="remove">Remove 1 cookie</span>
+                            <span class="remove">Remove</span>
                         </figcaption>
                     </figure>
                 </div>
@@ -36,10 +38,10 @@
                             <figcaption class="caption">
                                 <h3>Burger cookies</h3>
                                 <p><strong>Total cookies added : </strong><?= $_COOKIE['cookieadded'][36] ?></p>
-                                <a  href="add.php?add_to_cart=46" class="btn btn-danger">
+                                <a  href="delete.php?remove=36" class="btn btn-danger">
                                     <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
                                 </a>
-                                <span class="remove">Remove 1 cookie</span>
+                                <span class="remove">Remove</span>
                             </figcaption>
                         </figure>
                     </div>
@@ -55,10 +57,10 @@
                             <figcaption class="caption">
                                 <h3>Blue Chocolate cookies</h3>
                                 <p><strong>Total cookies added : </strong><?= $_COOKIE['cookieadded'][58] ?></p>
-                                <a  href="add.php?add_to_cart=46" class="btn btn-danger">
+                                <a  href="delete.php?remove=58" class="btn btn-danger">
                                     <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
                                 </a>
-                                <span class="remove">Remove 1 cookie</span>
+                                <span class="remove">Remove</span>
                             </figcaption>
                         </figure>
                     </div>
@@ -74,10 +76,10 @@
                             <figcaption class="caption">
                                 <h3>M&M's&copy; cookies</h3>
                                 <p><strong>Total cookies added : </strong><?= $_COOKIE['cookieadded'][32] ?></p>
-                                <a  href="add.php?add_to_cart=46" class="btn btn-danger">
+                                <a  href="delete.php?remove=32" class="btn btn-danger">
                                     <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
                                 </a>
-                                <span class="remove">Remove 1 cookie</span>
+                                <span class="remove">Remove</span>
                             </figcaption>
                         </figure>
                     </div>
