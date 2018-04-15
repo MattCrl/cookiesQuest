@@ -7,8 +7,6 @@
           header('Location: login.php?log=1');
       }
 
-      var_dump($_COOKIE['cookieadded']);
-
       if (isset($_COOKIE['cookieadded'])) {
         if (isset($_COOKIE['cookieadded'][46])) {
             if ($_COOKIE['cookieadded'][46] > 0) { ?>
